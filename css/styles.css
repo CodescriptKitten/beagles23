@@ -2,10 +2,26 @@
 
 /*
 
+Fonts:
+
+font-family: 'Dosis', sans-serif;
+font-family: 'Spectral', serif;
+font-family: 'Titan One', cursive;
+
+Colors:
+
+#72543C - Puppy Ear Brown
+#AF7840 - Puppy Beige
+#D28D4C - Woodfloor Beige
+#363D43 - Puppy Belly Black
+#E2D8BF - Puppy Paw White
+#EBD441 - Retriever Gold
 
 */
 
 /* CSS Reset */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;700&family=Spectral:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&family=Titan+One&display=swap');
+
 *, *:active {
 	padding: 0;
 	margin: 0;
@@ -13,7 +29,7 @@
 }
 
 body {
-	background-color: #e4f2ea;
+	background-color: #E2D8BF;
 }
 
 header {
@@ -23,13 +39,30 @@ header {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 20% 20%;
+	font-family: 'Titan One', cursive;
+}
+
+header h1 {
+	text-align:center;
+	color: #72543C;
+	font-weight:bold;
+	font-size: 5em;
+	text-shadow: 2px 2px 2px black;
+}
+
+header h2 {
+	text-align:center;
+	color: #363D43;
+	color-size: 3em;
+	text-shadow: 2px 2px 2px white;
 }
 
 .hnav {
 	padding: 5px 0;
 	width: 100%;
-	background-color:#11181e;
+	background-color:#363D43;
 	min-height: 50px;
+	font-family: 'Spectral', serif;
 }
 
 .hnav ul {
@@ -41,35 +74,72 @@ header {
 	display: inline-block;
 	list-style: none;
 	width: 16%;
-	margin-top: .8%;
+	margin-top: .6%;
 }
 
-.hnav a {
+.hnav a:link {
 	color: #e4f2ea;
 	text-decoration: none;
-	font-size: 1.5em;
+	font-size: 1.6em;
 }
 
-a:link {
-	
+.hnav a:active {
+	color: white;
 }
 
-a:active {
-	
+.hnav a:hover {
+	color: #D28D4C;
 }
 
-a:hover {
-	
-}
-
-a:visited {
-	
+.hnav a:visited {
+	color: #EBD441;
 }
 
 main {
 	width: 90%;
 }
 
+#container {
+	padding: 2% 0;
+	margin: 0 auto;
+	width: 80%;
+	min-height: 500px;
+	font-size: 1.6em;
+	color: #363D43;
+	font-family: 'Dosis', sans-serif;
+	/* background-color:red; */
+}
+
+#container h1 {
+	font-family: 'Spectral', serif;
+}
+
+#container img {
+	width: 400px;
+	height: 300px;
+	border: solid;
+	border-width: 3px;
+	float: left;
+	margin: 2%;
+}
+
+#container p {
+	padding-top: 1em;
+}
+
+#newsletter table {
+	margin: 2em;
+	border: double;
+}
+
+#newsletter table tr td input {
+	font-size: .6em;
+}
+
+.buttons {
+	border-radius: 5px;
+	border: thick;
+}
 
 h1 {
 	
@@ -104,7 +174,7 @@ td {
 }
 
 footer {
-	
+	margin: 2em 0;
 }
 
 .fnav {
@@ -130,6 +200,22 @@ footer {
 	color: #e4f2ea;
 	text-decoration: none;
 	font-size: 1.5em;
+}
+
+.fnav a:active {
+	color: white;
+}
+
+.fnav a:hover {
+	color: #D28D4C;
+}
+
+.fnav a:visited {
+	color: #EBD441;
+}
+
+.copyright {
+	text-align: center;
 }
 
 .fairUseTag {
